@@ -1,0 +1,18 @@
+# cache
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info
+*.dist-info
+*.egg
+
+# secret
+.env
+*.session
+
+# complied files
+*.pkl
+*.pikle
+*.h5
