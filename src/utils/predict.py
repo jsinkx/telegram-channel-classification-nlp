@@ -44,6 +44,7 @@ def predict(model, tokenizer, text, max_news_len):
 def predict_class(model, tokenizer, text, y_train, max_news_len):
     try:
         class_labels = y_train.keys()
+        class_labels = ['АВТО БАТЯ', 'АЭРОФЛОТ', 'Телеграмма РЖД'] # ! Hardcode
         predictions = predict(model, tokenizer, text, max_news_len)
         
         predicted_class_index = np.argmax(predictions)

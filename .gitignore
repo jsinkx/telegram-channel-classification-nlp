@@ -9,10 +9,13 @@ __pycache__/
 *.egg
 
 # secret
+bin
 .env
 *.session
 
 # complied files
+catboost_info
 *.pkl
-*.pikle
+*.pickle
+*.pkl
 *.h5
