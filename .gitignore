@@ -1,6 +1,7 @@
 # cache
-.DS_Store
+cache
 __pycache__/
+.DS_Store
 *.pyc
 *.pyo
 *.so
@@ -11,6 +12,7 @@ __pycache__/
 # secret
 bin
 .env
+_*.ipynb
 *.session
 
 # complied files
