@@ -8,13 +8,10 @@ from shared.constants import TELEGRAM_API_ID, TELEGRAM_API_HASH
 CHANNELS_TRAIN = ['Телеграмма РЖД']
 CHANNELS_CAR = ['АВТО БАТЯ']
 CHANNELS_AIR = ['АЭРОФЛОТ']
-
 PARSING_CHANNELS_NAMES = [*CHANNELS_TRAIN, *CHANNELS_CAR, *CHANNELS_AIR]
 
 MS_DELAY_BEFORE_NEXT_MESSAGE = 1
-
 MAX_MESSAGES = 1_500
-
 OUTPUT_FILE = 'data.json'
 
 client = TelegramClient('tg_parser', TELEGRAM_API_ID, TELEGRAM_API_HASH)
@@ -51,4 +48,4 @@ async def main():
         json.dump(data, file, indent=4, ensure_ascii=False)
                 
 with client:
-    client.loop.run_until_complete(main())  
+    client.loop.run_until_complete(main())
